@@ -48,7 +48,7 @@ strong, h1, h2, h3, h4, h5 {
 
 /* line 62, ../assets/css/patch.scss */
 a {
-  color: #3071b3; }
+  color: #36435a; }
 
 /* line 66, ../assets/css/patch.scss */
 code {
@@ -120,11 +120,11 @@ code {
       font-size: 25px;
       line-height: 36px; }
   /* line 139, ../assets/css/patch.scss */
-  .wrapper-info .wrapper-platforms {
-    color: #1abc9c;
+  .wrapper-info .wrapper-institutions {
+    color: #3a96b7;
     margin-bottom: 8px; }
     /* line 143, ../assets/css/patch.scss */
-    .wrapper-info .wrapper-platforms .platform {
+    .wrapper-info .wrapper-institutions .institution {
       margin-right: 2px; }
   /* line 148, ../assets/css/patch.scss */
   .wrapper-info .wrapper-body {
@@ -225,11 +225,11 @@ code {
         cursor: pointer; }
 
 /* line 268, ../assets/css/patch.scss */
-.filter-platforms td {
-  color: #1abc9c; }
+.filter-institutions td {
+  color: #3a96b7; }
   /* line 270, ../assets/css/patch.scss */
-  .filter-platforms td.active {
-    background: #1abc9c;
+  .filter-institutions td.active {
+    background: #3a96b7;
     color: white; }
 
 /* line 268, ../assets/css/patch.scss */
@@ -266,7 +266,7 @@ code {
   top: 40px;
   right: -75px;
   z-index: 9999;
-  background: #3071B3;
+  background: #36435A;
   -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
   color: #FFFFFF;

@@ -5,23 +5,23 @@ $(function () {
 
   var currentQuery = {
     tags: [],
-    platforms: []
+    institutions: []
   };
 
   var filter = function(query){
     var filtered = $('.wrapper-info').filter(function(){
-      var platformMatch = false;
+      var institutionMatch = false;
       var tagMatch = false;
 
-      if (query.platforms.length > 0) {
-        platformMatch = $(this).find('.platform').filter(function(){
+      if (query.institutions.length > 0) {
+        institutionMatch = $(this).find('.institution').filter(function(){
           var thisPlatform = $(this).text().replace(",", "").trim();
-          var matchesQuery = query.platforms.indexOf(thisPlatform) !== -1;
+          var matchesQuery = query.institutions.indexOf(thisPlatform) !== -1;
           return matchesQuery
-        }).size() === query.platforms.length;
+        }).size() === query.institutions.length;
       }
       else {
-        platformMatch = true;
+        institutionMatch = true;
       }
 
       if (query.tags.length > 0) {
@@ -34,7 +34,7 @@ $(function () {
         tagMatch = true;
       }
 
-      return platformMatch && tagMatch;
+      return institutionMatch && tagMatch;
     });
 
     // Show the wrappers and then immediately hide the ones that contain the filter tag
@@ -83,7 +83,7 @@ $(function () {
 
   tagContainer.on('click', 'td', onFilterClick(currentQuery.tags));
 
-  $(".filter-platforms table").on('click', 'td', onFilterClick(currentQuery.platforms));
+  $(".filter-institutions table").on('click', 'td', onFilterClick(currentQuery.institutions));
 
   $(".wrapper-tags-list").hide();
   $(".wrapper-tags-label").click(function(ev) {
