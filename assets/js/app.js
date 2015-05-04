@@ -5,23 +5,23 @@ $(function () {
 
   var currentQuery = {
     tags: [],
-    institutions: []
+    experiences: []
   };
 
   var filter = function(query){
     var filtered = $('.wrapper-info').filter(function(){
-      var institutionMatch = false;
+      var experienceMatch = false;
       var tagMatch = false;
 
-      if (query.institutions.length > 0) {
-        institutionMatch = $(this).find('.institution').filter(function(){
+      if (query.experiences.length > 0) {
+        experienceMatch = $(this).find('.experience').filter(function(){
           var thisPlatform = $(this).text().replace(",", "").trim();
-          var matchesQuery = query.institutions.indexOf(thisPlatform) !== -1;
+          var matchesQuery = query.experiences.indexOf(thisPlatform) !== -1;
           return matchesQuery
-        }).size() === query.institutions.length;
+        }).size() === query.experiences.length;
       }
       else {
-        institutionMatch = true;
+        experienceMatch = true;
       }
 
       if (query.tags.length > 0) {
@@ -34,7 +34,7 @@ $(function () {
         tagMatch = true;
       }
 
-      return institutionMatch && tagMatch;
+      return experienceMatch && tagMatch;
     });
 
     // Show the wrappers and then immediately hide the ones that contain the filter tag
@@ -83,7 +83,7 @@ $(function () {
 
   tagContainer.on('click', 'td', onFilterClick(currentQuery.tags));
 
-  $(".filter-institutions table").on('click', 'td', onFilterClick(currentQuery.institutions));
+  $(".filter-experience table").on('click', 'td', onFilterClick(currentQuery.experiences));
 
   $(".wrapper-tags-list").hide();
   $(".wrapper-tags-label").click(function(ev) {
@@ -96,6 +96,20 @@ $(function () {
     else {
       $el.addClass("active");
       $(".wrapper-tags-list", $el.parent()).show();
+    }
+  });
+
+  $(".wrapper-requirements-list").hide();
+  $(".wrapper-requirements-label").click(function(ev) {
+    ev.preventDefault();
+    var $el = $(this);
+    if ($el.hasClass("active")) {
+      $el.removeClass("active");
+      $(".wrapper-requirements-list", $el.parent()).hide();
+    }
+    else {
+      $el.addClass("active");
+      $(".wrapper-requirements-list", $el.parent()).show();
     }
   });
 
