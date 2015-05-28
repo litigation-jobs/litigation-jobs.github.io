@@ -95,6 +95,23 @@
       "name": "Boutique",
       "wrappers": [
         {
+          "name": "Litigation Associate",
+          "institution_type": "Boutique",
+          "institution_name": "Reid Collins & Tsai LLP",
+          "url": "http://lawjobs.com/job/litigation-associate-new-york-new-york-157545",
+          "description": "Represents individual and corporate clients on a mixed-fee and contingent basis in complex commercial litigation. Much of our practice involves representing trustees, receivers, litigation trusts, and others in fraudulent transfer claims and breach of duty cases arising out of Ponzi schemes or other financial frauds.",
+          "requirements": "Candidates must have excellent academics and strong writing skills. Experience in bankruptcy litigation is preferred, but not essential. However, it is essential that you’re a competitive person who loves practicing law and craves a challenge.",
+          "years_experience":["2","3","4","5"],
+          "tags": [
+            "Finance",
+            "Fraud",
+            "Trustee",
+            "Receiver",
+            "Bankruptcy",
+            "Litigation Trust"
+          ]
+        },
+        {
           "name": "Associate Attorney ",
           "institution_type": "Boutique",
           "institution_name": "Byrne and O'Neill",
@@ -124,6 +141,22 @@
     {
       "name": "Corporate Counsel",
       "wrappers": [
+        {
+          "name": "Litigation-regulatory Attorney, VP",
+          "institution_type": "Corporate Counsel",
+          "institution_name": "Goldman Sachs",
+          "url": "http://www.goldmansachs.com/a/data/jobs/32227.html?&bid=9993572",
+          "description": "The Litigation and Regulatory Proceedings Group oversees and handles litigation, arbitration, regulatory and other proceedings that involve Goldman Sachs, its affiliates or their employees, as well as other matters in connection with proceedings in which the firm is not a party.",
+          "requirements": "3-5 years of experience at a leading law firm or financial institution.",
+          "years_experience":["3","4","5"],
+          "tags": [
+            "Arbitration",
+            "Regulatory",
+            "Compliance",
+            "Reporting",
+            "3rd Party"
+          ]
+        },
         {
           "name": "AFCO General Counsel",
           "institution_type": "Corporate Counsel",
@@ -188,6 +221,22 @@
     {
       "name": "Government",
       "wrappers": [
+        {
+          "name": "Associate Counsel",
+          "institution_type": "Government",
+          "institution_name": "Metro-North Railroad",
+          "url": "https://erecruit.mtabsc.info/psc/ERPRD/EMPLOYEE/HRMS/c/HRS_HRAM.HRS_CE.GBL?Page=HRS_CE_JOB_DTL&Action=A&JobOpeningId=83158&SiteId=1&PostingSeq=1&HRS_SUBSOURCE_ID=1341&",
+          "description": "Represent and defend Metro-North in legal matters before federal and state courts and before administrative agencies, with focus on labor and employment matters.",
+          "requirements": "NYS License. Demonstrated skills in litigating matters in federal and state court and before administrative agencies, including labor, employment and civil rights matters (e.g., federal, state and local EEO laws, FMLA, ADEA, ADA, retaliation).",
+          "years_experience":["3","4","5","6","7","8","9","10","11+"],
+          "tags": [
+            "FMLA",
+            "ADEA",
+            "ADA",
+            "Retaliation",
+            "EEO"
+          ]
+        },
         {
           "name": "Assistant General Counsel",
           "institution_type": "Government",
